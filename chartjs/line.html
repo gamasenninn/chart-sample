@@ -1,0 +1,55 @@
+
+<htmL>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+</head>
+<body>
+    ssssss
+    ssssssss
+    ssssss
+    <canvas id="myChart" width="400"></canvas>
+    <script>
+        const labels = [
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+          'June',
+          'June',
+          'June',
+          'June',
+          'June',
+          'June',
+          'June',
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            fill: false,
+            data: [0, 10, 5, 2, 20, 30, 45,3,40,39,25,34],
+            tension: 0.1,
+          }]
+        };
+      
+        const config = {
+          type: 'line',
+          data: data,
+          options: {}
+        };
+
+</script>
+<script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  </script>
+</body>    
+</htmL>
+
