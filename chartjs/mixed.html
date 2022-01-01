@@ -1,0 +1,84 @@
+
+<htmL>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+</head>
+<body>
+    ssssss
+    ssssssss
+    ssssss
+    <canvas id="myChart" width="400"></canvas>
+    <script>
+        const labels = [
+          'January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+          'June',
+          'June',
+          'June',
+          'June',
+          'June',
+          'June',
+          'June',
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            fill: false,
+            data: [0, 10, 5, 2, 20, 30, 45,3,40,39,25,34],
+            tension: 0.1,
+          }]
+        };
+      
+        const config = {
+          type: 'line',
+          data: data,
+          options: {}
+        };
+
+</script>
+<script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      {
+        data: {
+          datasets: [{
+              type: 'bar',
+              label: 'Bar Dataset',
+              data: [10, 20, 30, 40],
+              order: 2
+          }, {
+              type: 'line',
+              label: 'Line Dataset',
+              data: [30, 10, 40, 35],
+              order: 1,
+              yAxisID: 'y2'
+          }],
+          labels: ['January', 'February', 'March', 'April']
+        },
+        options:{
+          scales:{
+            y:{
+              min:0,
+              max:60,
+            },
+            y2:{
+              min:0,
+              max:120,
+              position: 'right'
+            }
+          }
+        }
+      }
+    );
+  </script>
+</body>    
+</htmL>
+
